@@ -6,6 +6,7 @@ import com.icheero.leetcode.array.DominantIndex;
 import com.icheero.leetcode.array.FindDiagonalOrder;
 import com.icheero.leetcode.array.KidsWithCandies;
 import com.icheero.leetcode.array.MajorityElement;
+import com.icheero.leetcode.array.MoveZeroes;
 import com.icheero.leetcode.array.PivotIndex;
 import com.icheero.leetcode.array.PlusOne;
 import com.icheero.leetcode.linked.AddTwoNumbers;
@@ -24,7 +25,7 @@ public class Program
 {
     public static void main(String[] args)
     {
-        mergeTwoLists();
+        moveZeroes();
     }
 
     // region Array
@@ -65,6 +66,11 @@ public class Program
     private static void kidsWithCandies()
     {
         System.out.println(KidsWithCandies.solution(new int[]{2, 3, 5, 1, 3}, 3));
+    }
+
+    private static void moveZeroes()
+    {
+        MoveZeroes.solution(new int[]{1, 0, 2, 3, 0, 12});
     }
     // endregion
 
