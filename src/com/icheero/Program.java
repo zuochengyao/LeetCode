@@ -16,6 +16,7 @@ import com.icheero.leetcode.math.RomanToInteger;
 import com.icheero.leetcode.string.AddBinary;
 import com.icheero.leetcode.string.LengthOfLongestSubstring;
 import com.icheero.leetcode.string.UncommonFromSentences;
+import com.icheero.sort.SortUtil;
 
 import java.util.Arrays;
 
@@ -25,7 +26,7 @@ public class Program
 {
     public static void main(String[] args)
     {
-        moveZeroes();
+        insert();
     }
 
     // region Array
@@ -116,5 +117,19 @@ public class Program
         System.out.println(RomanToInteger.solution("MCMXCIV"));
     }
 
+    // endregion
+
+    // region Sort
+    private static int[] target = new int[]{2, 4, 1, 0, 7, 5, 9};
+
+    private static void selection()
+    {
+        System.out.println(Arrays.toString(SortUtil.selectStraight(target)));
+    }
+
+    private static void insert()
+    {
+        System.out.println(Arrays.toString(SortUtil.insertStraight(target)));
+    }
     // endregion
 }
