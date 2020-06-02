@@ -2,14 +2,19 @@ package com.icheero.sort;
 
 public class SortUtil
 {
-    public static int[] selectStraight(int[] target)
+    public static void selectStraight(int[] target)
     {
-        return Selection.straight(target);
+        Selection.straight(target);
     }
 
-    public static int[] insertStraight(int[] target)
+    public static void insertStraight(int[] target)
     {
-        return Insert.straight(target);
+        Insert.straight(target);
+    }
+
+    public static void bubble(int[] target)
+    {
+        Exchange.bubble(target);
     }
 
     static void swap(int[] target, int a, int b)

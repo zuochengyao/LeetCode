@@ -26,7 +26,7 @@ public class Program
 {
     public static void main(String[] args)
     {
-        insert();
+        bubble();
     }
 
     // region Array
@@ -120,16 +120,24 @@ public class Program
     // endregion
 
     // region Sort
-    private static int[] target = new int[]{2, 4, 1, 0, 7, 5, 9};
+    private static int[] target = {2, 4, 1, 0, 7, 5, 9};
 
     private static void selection()
     {
-        System.out.println(Arrays.toString(SortUtil.selectStraight(target)));
+        SortUtil.selectStraight(target);
+        System.out.println(Arrays.toString(target));
     }
 
     private static void insert()
     {
-        System.out.println(Arrays.toString(SortUtil.insertStraight(target)));
+        SortUtil.insertStraight(target);
+        System.out.println(Arrays.toString(target));
+    }
+
+    private static void bubble()
+    {
+        SortUtil.bubble(target);
+        System.out.println(Arrays.toString(target));
     }
     // endregion
 }
