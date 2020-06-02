@@ -1,4 +1,4 @@
-﻿package com.icheero.sort;
+package com.icheero.sort;
 
 /**
  * 选择排序
