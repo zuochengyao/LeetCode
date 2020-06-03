@@ -11,6 +11,7 @@ import com.icheero.leetcode.array.PivotIndex;
 import com.icheero.leetcode.array.PlusOne;
 import com.icheero.leetcode.linked.AddTwoNumbers;
 import com.icheero.leetcode.linked.MergeTwoLists;
+import com.icheero.leetcode.math.Multiply;
 import com.icheero.leetcode.math.ReverseInteger;
 import com.icheero.leetcode.math.RomanToInteger;
 import com.icheero.leetcode.string.AddBinary;
@@ -26,7 +27,7 @@ public class Program
 {
     public static void main(String[] args)
     {
-        quick();
+        multiply();
     }
 
     // region Array
@@ -117,6 +118,10 @@ public class Program
         System.out.println(RomanToInteger.solution("MCMXCIV"));
     }
 
+    private static void multiply()
+    {
+        System.out.println(Multiply.solution("123", "456"));
+    }
     // endregion
 
     // region Sort
