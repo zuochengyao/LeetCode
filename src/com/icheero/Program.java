@@ -10,6 +10,7 @@ import com.icheero.leetcode.array.MoveZeroes;
 import com.icheero.leetcode.array.PivotIndex;
 import com.icheero.leetcode.array.PlusOne;
 import com.icheero.leetcode.linked.AddTwoNumbers;
+import com.icheero.leetcode.linked.HasCycle;
 import com.icheero.leetcode.linked.MergeTwoLists;
 import com.icheero.leetcode.math.Multiply;
 import com.icheero.leetcode.math.ReverseInteger;
@@ -27,7 +28,7 @@ public class Program
 {
     public static void main(String[] args)
     {
-        multiply();
+        hasCycle();
     }
 
     // region Array
@@ -85,6 +86,11 @@ public class Program
     private static void mergeTwoLists()
     {
         System.out.println(MergeTwoLists.solution());
+    }
+
+    private static void hasCycle()
+    {
+        System.out.println(HasCycle.solution());
     }
     // endregion
 
