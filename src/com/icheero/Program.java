@@ -1,6 +1,7 @@
 package com.icheero;
 
 
+import com.icheero.dp.Knapsack01;
 import com.icheero.dp.MinDistance;
 import com.icheero.dp.MinPathSum;
 import com.icheero.dp.UniquePaths;
@@ -31,7 +32,7 @@ public class Program
 {
     public static void main(String[] args)
     {
-        minDistance();
+        knapsack01();
     }
 
     // region Array
@@ -176,6 +177,14 @@ public class Program
     private static void minDistance()
     {
         System.out.println(MinDistance.solution("horse", "ros"));
+    }
+
+    private static void knapsack01()
+    {
+        int[] weights = {2, 2, 6, 5, 4};
+        int[] values = {6, 3, 5, 4, 6};
+        int v = 10;
+        System.out.println(Knapsack01.solution(weights, values, v));
     }
     // endregion
 }
