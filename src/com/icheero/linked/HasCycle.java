@@ -1,4 +1,4 @@
-package com.icheero.leetcode.linked;
+package com.icheero.linked;
 
 /**
  * 141. 环形链表

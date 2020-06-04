@@ -1,4 +1,4 @@
-package com.icheero.leetcode.math;
+package com.icheero.math;
 
 /**
  * 43. 字符串相乘

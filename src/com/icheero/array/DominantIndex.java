@@ -1,4 +1,4 @@
-package com.icheero.leetcode.array;
+package com.icheero.array;
 
 /**
  * 747. 至少是其他数字两倍的最大数

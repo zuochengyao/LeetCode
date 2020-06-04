@@ -1,4 +1,4 @@
-package com.icheero.leetcode.string;
+package com.icheero.string;
 
 import java.util.HashMap;
 import java.util.LinkedList;

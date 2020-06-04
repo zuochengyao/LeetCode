@@ -1,4 +1,4 @@
-package com.icheero.leetcode.array;
+package com.icheero.array;
 
 import java.util.Arrays;
 import java.util.HashMap;

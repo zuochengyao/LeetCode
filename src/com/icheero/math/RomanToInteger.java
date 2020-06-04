@@ -1,4 +1,4 @@
-package com.icheero.leetcode.math;
+package com.icheero.math;
 
 import java.util.HashMap;
 import java.util.Map;

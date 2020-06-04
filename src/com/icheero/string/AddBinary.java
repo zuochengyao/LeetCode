@@ -1,4 +1,4 @@
-package com.icheero.leetcode.string;
+package com.icheero.string;
 
 /**
  * 67. 二进制求和

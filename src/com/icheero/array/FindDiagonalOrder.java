@@ -1,4 +1,4 @@
-package com.icheero.leetcode.array;
+package com.icheero.array;
 
 /**
  * 498. 对角线遍历

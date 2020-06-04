@@ -1,4 +1,4 @@
-package com.icheero.leetcode.linked;
+package com.icheero.linked;
 
 /**
  * 2. 两数相加

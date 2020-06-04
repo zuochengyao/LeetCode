@@ -1,4 +1,4 @@
-package com.icheero.leetcode.array;
+package com.icheero.array;
 
 /**
  * 66. 加一

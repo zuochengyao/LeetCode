@@ -1,4 +1,4 @@
-package com.icheero.leetcode.array;
+package com.icheero.array;
 
 /**
  * 704. 二分查找

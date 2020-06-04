@@ -1,4 +1,4 @@
-package com.icheero.leetcode.math;
+package com.icheero.math;
 
 /**
  * 7. 整数反转

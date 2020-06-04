@@ -1,4 +1,4 @@
-package com.icheero.leetcode.array;
+package com.icheero.array;
 
 import java.util.ArrayList;
 import java.util.List;

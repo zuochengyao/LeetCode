@@ -1,4 +1,4 @@
-package com.icheero.leetcode.linked;
+package com.icheero.linked;
 
 /**
  * 21. 合并两个有序链表
