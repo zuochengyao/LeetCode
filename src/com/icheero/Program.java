@@ -1,6 +1,8 @@
 package com.icheero;
 
 
+import com.icheero.dp.MinDistance;
+import com.icheero.dp.MinPathSum;
 import com.icheero.dp.UniquePaths;
 import com.icheero.leetcode.array.BinarySearch;
 import com.icheero.leetcode.array.DominantIndex;
@@ -29,7 +31,7 @@ public class Program
 {
     public static void main(String[] args)
     {
-        uniquePaths();
+        minDistance();
     }
 
     // region Array
@@ -163,6 +165,17 @@ public class Program
     private static void uniquePaths()
     {
         System.out.println(UniquePaths.solution(7, 3));
+    }
+
+    private static void minPathSum()
+    {
+        int[][] grid = {{1, 3, 1}, {1, 5, 1}, {4, 2, 1}};
+        System.out.println(MinPathSum.solution(grid));
+    }
+
+    private static void minDistance()
+    {
+        System.out.println(MinDistance.solution("horse", "ros"));
     }
     // endregion
 }
