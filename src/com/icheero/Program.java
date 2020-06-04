@@ -1,6 +1,7 @@
 package com.icheero;
 
 
+import com.icheero.dp.UniquePaths;
 import com.icheero.leetcode.array.BinarySearch;
 import com.icheero.leetcode.array.DominantIndex;
 import com.icheero.leetcode.array.FindDiagonalOrder;
@@ -28,7 +29,7 @@ public class Program
 {
     public static void main(String[] args)
     {
-        hasCycle();
+        uniquePaths();
     }
 
     // region Array
@@ -155,6 +156,13 @@ public class Program
     {
         SortUtil.quick(target);
         System.out.println(Arrays.toString(target));
+    }
+    // endregion
+
+    // region 动态规划 DP
+    private static void uniquePaths()
+    {
+        System.out.println(UniquePaths.solution(7, 3));
     }
     // endregion
 }
