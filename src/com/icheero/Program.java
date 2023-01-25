@@ -1,5 +1,6 @@
 package com.icheero;
 
+import com.icheero.array.RemoveElement;
 import com.icheero.dp.Knapsack01;
 import com.icheero.dp.MinDistance;
 import com.icheero.dp.MinPathSum;
@@ -29,7 +30,7 @@ import java.util.Arrays;
 @SuppressWarnings("unused")
 public class Program {
     public static void main(String[] args) {
-        longestCommonPrefix();
+        removeElement();
     }
 
     // region Array
@@ -67,6 +68,10 @@ public class Program {
 
     private static void moveZeroes() {
         MoveZeroes.solution(new int[] {1, 0, 2, 3, 0, 12});
+    }
+
+    private static void removeElement() {
+        RemoveElement.solution(new int[] {3, 2, 2, 3}, 3);
     }
     // endregion
 
