@@ -11,11 +11,9 @@ package com.icheero.linked;
  *
  * https://leetcode-cn.com/problems/merge-two-sorted-lists/
  */
-public class MergeTwoLists
-{
+public class MergeTwoLists {
 
-    public static ListNode solution()
-    {
+    public static ListNode solution() {
         ListNode l1 = new ListNode(1);
         l1.next = new ListNode(2);
         l1.next.next = new ListNode(4);
@@ -28,19 +26,14 @@ public class MergeTwoLists
         return solution(l1, l2);
     }
 
-    private static ListNode solution(ListNode l1, ListNode l2)
-    {
+    private static ListNode solution(ListNode l1, ListNode l2) {
         ListNode node = new ListNode(-1);
         ListNode current = node;
-        while (l1 != null && l2 != null)
-        {
-            if (l1.val >= l2.val)
-            {
+        while (l1 != null && l2 != null) {
+            if (l1.val >= l2.val) {
                 current.next = l2;
                 l2 = l2.next;
-            }
-            else
-            {
+            } else {
                 current.next = l1;
                 l1 = l1.next;
             }
@@ -48,26 +41,5 @@ public class MergeTwoLists
         }
         current.next = l1 == null ? l2 : l1;
         return node.next;
-    }
-
-    private static class ListNode
-    {
-        int val;
-        ListNode next;
-
-        ListNode()
-        {
-        }
-
-        ListNode(int val)
-        {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next)
-        {
-            this.val = val;
-            this.next = next;
-        }
     }
 }
