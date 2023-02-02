@@ -30,7 +30,7 @@ import java.util.Arrays;
 @SuppressWarnings("unused")
 public class Program {
     public static void main(String[] args) {
-        removeElement();
+
     }
 
     // region Array
