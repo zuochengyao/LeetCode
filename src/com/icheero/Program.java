@@ -1,10 +1,5 @@
 package com.icheero;
 
-import com.icheero.array.RemoveElement;
-import com.icheero.dp.Knapsack01;
-import com.icheero.dp.MinDistance;
-import com.icheero.dp.MinPathSum;
-import com.icheero.dp.UniquePaths;
 import com.icheero.array.BinarySearch;
 import com.icheero.array.DominantIndex;
 import com.icheero.array.FindDiagonalOrder;
@@ -13,24 +8,31 @@ import com.icheero.array.MajorityElement;
 import com.icheero.array.MoveZeroes;
 import com.icheero.array.PivotIndex;
 import com.icheero.array.PlusOne;
+import com.icheero.array.RemoveElement;
+import com.icheero.designpattern.creational.factory.AbstractFactory;
+import com.icheero.designpattern.creational.factory.RealFactory;
+import com.icheero.designpattern.creational.factory.RealProduct;
+import com.icheero.dp.Knapsack01;
+import com.icheero.dp.MinDistance;
+import com.icheero.dp.MinPathSum;
+import com.icheero.dp.UniquePaths;
 import com.icheero.linked.AddTwoNumbers;
 import com.icheero.linked.HasCycle;
 import com.icheero.linked.MergeTwoLists;
 import com.icheero.math.Multiply;
 import com.icheero.math.ReverseInteger;
 import com.icheero.math.RomanToInteger;
+import com.icheero.sort.SortUtil;
 import com.icheero.string.AddBinary;
 import com.icheero.string.LengthOfLongestSubstring;
 import com.icheero.string.LongestCommonPrefix;
 import com.icheero.string.UncommonFromSentences;
-import com.icheero.sort.SortUtil;
-
 import java.util.Arrays;
 
 @SuppressWarnings("unused")
 public class Program {
     public static void main(String[] args) {
-
+        abstractFactory();
     }
 
     // region Array
@@ -168,6 +170,14 @@ public class Program {
         int[] values = {6, 3, 5, 4, 6};
         int v = 10;
         System.out.println(Knapsack01.solution(weights, values, v));
+    }
+    // endregion
+
+    // region 设计模式
+    static void abstractFactory() {
+        AbstractFactory factory = new RealFactory();
+        RealProduct product = factory.createProduct(RealProduct.class);
+        product.product();
     }
     // endregion
 }
