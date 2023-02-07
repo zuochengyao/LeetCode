@@ -8,39 +8,39 @@ package com.icheero.dp;
  * 问总共有多少条不同的路径？
  *
  * 示例1:
- *      输入: m = 3, n = 2
- *      输出: 3
- *      解释:
- *      从左上角开始，总共有 3 条路径可以到达右下角。
- *      1. 向右 -> 向右 -> 向下
- *      2. 向右 -> 向下 -> 向右
- *      3. 向下 -> 向右 -> 向右
+ * 输入: m = 3, n = 2
+ * 输出: 3
+ * 解释:
+ * 从左上角开始，总共有 3 条路径可以到达右下角。
+ * 1. 向右 -> 向右 -> 向下
+ * 2. 向右 -> 向下 -> 向右
+ * 3. 向下 -> 向右 -> 向右
  *
  * 示例2:
- *      输入: m = 7, n = 3
- *      输出: 28
+ * 输入: m = 7, n = 3
+ * 输出: 28
  *
  * 提示：
- *      1 <= m, n <= 100
- *      题目数据保证答案小于等于 2 * 10 ^ 9
+ * 1 <= m, n <= 100
+ * 题目数据保证答案小于等于 2 * 10 ^ 9
  *
  * https://leetcode-cn.com/problems/unique-paths
  */
-public class UniquePaths
-{
-    public static int solution(int m, int n)
-    {
+public class UniquePaths {
+    public static int solution(int m, int n) {
         if (m <= 0 || n <= 0)
             return 0;
         int[][] dp = new int[m][n];
-        for (int i = 0; i < m; i++)
+        for (int i = 0; i < m; i++) {
             dp[i][0] = 1;
-        for (int i = 0; i < n; i++)
+        }
+        for (int i = 0; i < n; i++) {
             dp[0][i] = 1;
-        for (int i = 1; i < m; i++)
-        {
-            for (int j = 1; j < n; j++)
+        }
+        for (int i = 1; i < m; i++) {
+            for (int j = 1; j < n; j++) {
                 dp[i][j] = dp[i - 1][j] + dp[i][j - 1];
+            }
         }
         return dp[m - 1][n - 1];
     }
