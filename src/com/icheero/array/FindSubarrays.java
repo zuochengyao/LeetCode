@@ -15,7 +15,7 @@ import java.util.Map;
  * @date 2023-02-07
  */
 class FindSubArrays {
-    static boolean solution(int[] nums) {
+    boolean solution(int[] nums) {
         boolean flag = false;
         Map<Integer, Boolean> map = new HashMap<>();
         for (int i = 1; i < nums.length; i++) {
