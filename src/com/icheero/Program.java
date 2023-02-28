@@ -1,38 +1,41 @@
 package com.icheero;
 
-import com.icheero.array.BinarySearch;
-import com.icheero.array.DominantIndex;
-import com.icheero.array.FindDiagonalOrder;
-import com.icheero.array.KidsWithCandies;
-import com.icheero.array.MajorityElement;
-import com.icheero.array.MoveZeroes;
-import com.icheero.array.PivotIndex;
-import com.icheero.array.PlusOne;
-import com.icheero.array.RemoveElement;
-import com.icheero.designpattern.creational.factory.AbstractFactory;
-import com.icheero.designpattern.creational.factory.RealFactory;
-import com.icheero.designpattern.creational.factory.RealProduct;
-import com.icheero.dp.Knapsack01;
-import com.icheero.dp.MinDistance;
-import com.icheero.dp.MinPathSum;
-import com.icheero.dp.UniquePaths;
-import com.icheero.linked.AddTwoNumbers;
-import com.icheero.linked.HasCycle;
-import com.icheero.linked.MergeTwoLists;
-import com.icheero.math.Multiply;
-import com.icheero.math.ReverseInteger;
-import com.icheero.math.RomanToInteger;
-import com.icheero.sort.SortUtil;
-import com.icheero.string.AddBinary;
-import com.icheero.string.LengthOfLongestSubstring;
-import com.icheero.string.LongestCommonPrefix;
-import com.icheero.string.UncommonFromSentences;
+import com.icheero.practice.array.BinarySearch;
+import com.icheero.practice.array.DominantIndex;
+import com.icheero.practice.array.FindDiagonalOrder;
+import com.icheero.practice.array.KidsWithCandies;
+import com.icheero.practice.array.MajorityElement;
+import com.icheero.practice.array.MoveZeroes;
+import com.icheero.practice.array.PivotIndex;
+import com.icheero.practice.array.PlusOne;
+import com.icheero.practice.array.RemoveElement;
+import com.icheero.theory.designpattern.creational.factory.AbstractFactory;
+import com.icheero.theory.designpattern.creational.factory.RealFactory;
+import com.icheero.theory.designpattern.creational.factory.RealProduct;
+import com.icheero.practice.dp.Knapsack01;
+import com.icheero.practice.dp.MinDistance;
+import com.icheero.practice.dp.MinPathSum;
+import com.icheero.practice.dp.UniquePaths;
+import com.icheero.practice.linked.AddTwoNumbers;
+import com.icheero.practice.linked.HasCycle;
+import com.icheero.practice.linked.MergeTwoLists;
+import com.icheero.practice.math.Multiply;
+import com.icheero.practice.math.ReverseInteger;
+import com.icheero.practice.math.RomanToInteger;
+import com.icheero.theory.sort.SortUtil;
+import com.icheero.practice.string.AddBinary;
+import com.icheero.practice.string.LengthOfLongestSubstring;
+import com.icheero.practice.string.LongestCommonPrefix;
+import com.icheero.practice.string.UncommonFromSentences;
 import java.util.Arrays;
 
 @SuppressWarnings("unused")
 public class Program {
     public static void main(String[] args) {
-        abstractFactory();
+        //abstractFactory();
+        String a = "abc";
+        String b = "a" + "bc";
+        System.out.println(a == b);
     }
 
     // region Array
